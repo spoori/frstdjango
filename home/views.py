@@ -5,7 +5,7 @@ from home.forms import BookForms
 
 def form_view(request):
     context=None
-    msg = None
+    
     form = None
     if request.method=='POST':
         form=BookForms(request.POST)
